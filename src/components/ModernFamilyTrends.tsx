@@ -2,7 +2,6 @@
  * Modern Family Trends - Xu hướng gia đình hiện đại Gen Z & Millennials
  */
 
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Smartphone, Users, Heart, Briefcase, Home, TrendingUp } from 'lucide-react';
 

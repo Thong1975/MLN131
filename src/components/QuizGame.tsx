@@ -2,7 +2,7 @@
  * Quiz Game Component - Trò chơi kiểm tra kiến thức về Gia đình trong CNXH
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, XCircle, Trophy, RotateCcw, ArrowRight } from 'lucide-react';
 

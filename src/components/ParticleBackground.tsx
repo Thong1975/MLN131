@@ -2,7 +2,7 @@
  * Particle Background Effect - Hiệu ứng hạt nền động
  */
 
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface Particle {
   x: number;

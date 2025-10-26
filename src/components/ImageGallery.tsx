@@ -2,7 +2,7 @@
  * Image Gallery with Navigator - Gallery hình ảnh với điều hướng
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
 

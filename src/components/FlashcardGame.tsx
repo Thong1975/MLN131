@@ -2,7 +2,7 @@
  * Flashcard Game Component - Thẻ ghi nhớ kiến thức về Gia đình
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, RotateCcw, Shuffle } from 'lucide-react';
 

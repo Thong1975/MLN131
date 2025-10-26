@@ -44,13 +44,22 @@ import {
 } from 'recharts';
 
 // Placeholder images - using data URIs for SVG placeholders
+const escapeForSVGText = (value: string) =>
+  value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
 const createPlaceholderSVG = (text: string, bgColor: string) => {
-  return `data:image/svg+xml,${encodeURIComponent(`
+  const safeText = escapeForSVGText(text);
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`
     <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
       <rect width="800" height="400" fill="${bgColor}"/>
       <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" 
             font-family="Arial, sans-serif" font-size="32" fill="white">
-        ${text}
+        ${safeText}
       </text>
     </svg>
   `)}`;
@@ -293,8 +302,10 @@ export default function FamilySocialistPage() {
     }
   };
 
+  const pdfPath = encodeURI('/MLN131 - Slot 10.pdf');
+
   const handleDownloadPDF = () => {
-    alert('Chức năng tải PDF đang được phát triển. Đây là phiên bản demo.');
+    window.open(pdfPath, '_blank');
   };
 
   return (
@@ -1133,7 +1144,7 @@ export default function FamilySocialistPage() {
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
                     <Pie data={womenEducationData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={110} label>
-                      {womenEducationData.map((entry, index) => (
+                      {womenEducationData.map((_entry, index) => (
                         <Cell key={`cell-${index}`} fill={eduColors[index % eduColors.length]} />
                       ))}
                     </Pie>
@@ -1193,6 +1204,27 @@ export default function FamilySocialistPage() {
                   </div>
                 </motion.div>
               ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* PDF Viewer */}
+      <section id="pdf" className="py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-4 text-center">
+              Tài liệu PDF gốc
+            </h2>
+            <p className="text-center text-gray-600 mb-8">
+              Xem trực tiếp tài liệu MLN131 – Slot 10 bên dưới hoặc bấm nút "Tải PDF tài liệu" ở cuối trang.
+            </p>
+            <div className="w-full h-[70vh] border border-gray-200 rounded-lg overflow-hidden shadow">
+              <iframe src={pdfPath} title="MLN131 - Slot 10 PDF" className="w-full h-full" />
             </div>
           </motion.div>
         </div>
