@@ -42,15 +42,29 @@ import {
   Pie,
   Cell
 } from 'recharts';
-import familyHero from './assets/family-hero.svg';
-import familyTradition from './assets/family-tradition.svg';
-import policyLaw from './assets/policy-law.svg';
-import cultureFamily from './assets/culture-family.svg';
-import familyNuclear from './assets/family-nuclear.svg';
-import familyExtended from './assets/family-extended.svg';
-import familySingleParent from './assets/family-single-parent.svg';
-import infographicValues from './assets/infographic-values.svg';
-import comparisonChart from './assets/comparison-traditional-modern.svg';
+
+// Placeholder images - using data URIs for SVG placeholders
+const createPlaceholderSVG = (text: string, bgColor: string) => {
+  return `data:image/svg+xml,${encodeURIComponent(`
+    <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+      <rect width="800" height="400" fill="${bgColor}"/>
+      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" 
+            font-family="Arial, sans-serif" font-size="32" fill="white">
+        ${text}
+      </text>
+    </svg>
+  `)}`;
+};
+
+const familyHero = createPlaceholderSVG('👨‍👩‍👧‍👦 Gia đình Việt Nam', '#0c4a6e');
+const familyTradition = createPlaceholderSVG('🏛️ Gia đình truyền thống', '#0284c7');
+const policyLaw = createPlaceholderSVG('⚖️ Chính sách & Pháp luật', '#0c4a6e');
+const cultureFamily = createPlaceholderSVG('🎭 Văn hóa gia đình', '#0284c7');
+const familyNuclear = createPlaceholderSVG('👨‍👩‍👧 Gia đình hạt nhân', '#0c4a6e');
+const familyExtended = createPlaceholderSVG('👨‍👩‍👧‍👦‍👴‍👵 Gia đình mở rộng', '#0284c7');
+const familySingleParent = createPlaceholderSVG('👨‍👧 Gia đình đơn thân', '#7c3aed');
+const infographicValues = createPlaceholderSVG('💎 Giá trị cốt lõi', '#0c4a6e');
+const comparisonChart = createPlaceholderSVG('📊 So sánh truyền thống - hiện đại', '#0284c7');
 
 // Dữ liệu biểu đồ: Cơ cấu quy mô hộ gia đình
 const familySizeData = [
