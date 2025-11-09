@@ -47,11 +47,12 @@ export default function IntroductionPage() {
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
               Tìm hiểu về vai trò, vị trí và định hướng phát triển của gia đình Việt Nam 
-              trong tiến trình xây dựng chủ nghĩa xã hội – Tài liệu học thuật MLN131
+              trong tiến trình xây dựng chủ nghĩa xã hội
             </p>
             <figure className="mt-10">
               <img
                 src={familyHero}
+                
                 alt="Minh họa gia đình Việt Nam trong thời kỳ quá độ"
                 className="mx-auto w-full max-w-4xl rounded-xl shadow-md"
                 loading="lazy"
@@ -82,8 +83,10 @@ export default function IntroductionPage() {
                 Gia đình là tế bào cơ bản của xã hội, đóng vai trò nền tảng trong việc 
                 duy trì và phát triển cộng đồng. Trong bối cảnh Việt Nam đang trong thời kỳ 
                 quá độ lên chủ nghĩa xã hội, gia đình không chỉ chịu tác động sâu sắc từ những 
-                biến đổi kinh tế - xã hội mà còn là động lực quan trọng thúc đẩy sự tiến bộ 
-                và phát triển bền vững của đất nước.
+                biến đổi kinh tế - xã hội mà còn là <strong>chủ thể tích cực, đóng vai trò quan trọng 
+                trong việc xây dựng xã hội chủ nghĩa</strong>. Gia đình Việt Nam đóng góp vào quá trình 
+                xây dựng xã hội chủ nghĩa thông qua các chức năng kinh tế, văn hóa, giáo dục, 
+                an sinh xã hội và là động lực quan trọng thúc đẩy sự tiến bộ và phát triển bền vững của đất nước.
               </p>
 
               <p className="mb-6">
@@ -131,11 +134,11 @@ export default function IntroductionPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-700 mr-2">✓</span>
-                    <span>Đưa ra định hướng phát triển gia đình trong tương lai</span>
+                    <span>Làm rõ vai trò và đóng góp của gia đình Việt Nam trong xây dựng xã hội chủ nghĩa</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-700 mr-2">✓</span>
-                    <span>Hỗ trợ học tập môn MLN131 thông qua trò chơi tương tác</span>
+                    <span>Đưa ra định hướng phát triển gia đình trong tương lai</span>
                   </li>
                 </ul>
               </div>

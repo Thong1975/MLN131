@@ -229,6 +229,97 @@ export default function TheoryPage() {
                   </div>
                 </div>
               </AccordionItem>
+
+              <AccordionItem title="IV. Vai trò của gia đình Việt Nam trong xây dựng chủ nghĩa xã hội">
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-primary-800 mb-2">1. Gia đình là tế bào cơ bản của xã hội xã hội chủ nghĩa</h4>
+                    <p>
+                      Gia đình không chỉ là đơn vị nhỏ nhất của xã hội mà còn là nền tảng vững chắc để xây dựng 
+                      xã hội chủ nghĩa. Một xã hội chủ nghĩa vững mạnh phải được xây dựng từ những gia đình ấm no, 
+                      bình đẳng, tiến bộ, hạnh phúc. Gia đình khỏe mạnh tạo ra những công dân tốt, góp phần xây dựng 
+                      xã hội văn minh, tiến bộ.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-primary-800 mb-2">2. Đóng góp của gia đình trong xây dựng xã hội chủ nghĩa</h4>
+                    <ul className="list-disc list-inside space-y-2 ml-4">
+                      <li>
+                        <strong>Về kinh tế:</strong> Gia đình là đơn vị sản xuất, tiêu dùng quan trọng, góp phần phát triển 
+                        kinh tế xã hội chủ nghĩa. Các gia đình tham gia vào các hoạt động sản xuất, kinh doanh, tạo ra của cải 
+                        vật chất cho xã hội, đồng thời là thị trường tiêu thụ quan trọng, thúc đẩy sản xuất phát triển.
+                      </li>
+                      <li>
+                        <strong>Về văn hóa – xã hội:</strong> Gia đình là nơi gìn giữ, phát huy giá trị văn hóa dân tộc, 
+                        truyền thống tốt đẹp của dân tộc Việt Nam. Thông qua giáo dục gia đình, các giá trị đạo đức, lối sống 
+                        văn minh được hình thành và lan tỏa ra xã hội, góp phần xây dựng nền văn hóa xã hội chủ nghĩa tiên tiến, 
+                        đậm đà bản sắc dân tộc.
+                      </li>
+                      <li>
+                        <strong>Về giáo dục – đào tạo:</strong> Gia đình là môi trường giáo dục đầu tiên và quan trọng nhất, 
+                        hình thành nhân cách, đạo đức, tư tưởng cho thế hệ trẻ. Gia đình giáo dục con cái trở thành những công dân 
+                        có đức, có tài, có trách nhiệm với xã hội, góp phần xây dựng đội ngũ lao động chất lượng cao cho đất nước.
+                      </li>
+                      <li>
+                        <strong>Về an sinh xã hội:</strong> Gia đình thực hiện chức năng chăm sóc, bảo vệ các thành viên, đặc biệt 
+                        là trẻ em, người già, người khuyết tật. Điều này góp phần giảm gánh nặng cho xã hội, tạo nền tảng cho hệ thống 
+                        an sinh xã hội toàn diện, nhân văn.
+                      </li>
+                      <li>
+                        <strong>Về ổn định xã hội:</strong> Gia đình ấm no, hạnh phúc là yếu tố quan trọng đảm bảo ổn định chính trị, 
+                        trật tự an toàn xã hội. Những gia đình vững mạnh tạo ra môi trường sống lành mạnh, giảm thiểu các tệ nạn xã hội, 
+                        góp phần xây dựng xã hội hòa bình, ổn định, phát triển.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-primary-800 mb-2">3. Gia đình và mối quan hệ với xây dựng xã hội chủ nghĩa</h4>
+                    <p className="mb-2">
+                      Xây dựng xã hội chủ nghĩa và xây dựng gia đình có mối quan hệ biện chứng, tác động qua lại lẫn nhau:
+                    </p>
+                    <ul className="list-disc list-inside space-y-1 ml-4">
+                      <li>
+                        <strong>Xã hội chủ nghĩa tạo điều kiện cho gia đình phát triển:</strong> Chế độ xã hội chủ nghĩa với 
+                        hệ thống pháp luật tiến bộ, chính sách hỗ trợ toàn diện tạo môi trường thuận lợi để gia đình phát triển 
+                        về mọi mặt.
+                      </li>
+                      <li>
+                        <strong>Gia đình góp phần xây dựng xã hội chủ nghĩa:</strong> Mỗi gia đình ấm no, hạnh phúc, văn minh 
+                        là một viên gạch vững chắc trong công cuộc xây dựng xã hội chủ nghĩa. Gia đình càng phát triển, xã hội 
+                        chủ nghĩa càng vững mạnh.
+                      </li>
+                      <li>
+                        <strong>Mối quan hệ tương hỗ:</strong> Xã hội chủ nghĩa càng phát triển, điều kiện sống của gia đình càng 
+                        được cải thiện. Ngược lại, gia đình càng ổn định, phát triển, đóng góp cho xã hội càng lớn, thúc đẩy xã hội 
+                        chủ nghĩa phát triển nhanh và bền vững.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-primary-800 mb-2">4. Trách nhiệm của gia đình trong xây dựng xã hội chủ nghĩa</h4>
+                    <ul className="list-disc list-inside space-y-1 ml-4">
+                      <li>Thực hiện đầy đủ các chức năng của gia đình: sinh đẻ, kinh tế, giáo dục, chăm sóc, văn hóa</li>
+                      <li>Giáo dục con cái trở thành công dân tốt, có đức, có tài, có trách nhiệm với xã hội</li>
+                      <li>Tham gia tích cực vào các phong trào xây dựng xã hội: xây dựng nông thôn mới, đô thị văn minh, gia đình văn hóa</li>
+                      <li>Gìn giữ và phát huy giá trị văn hóa truyền thống, tiếp thu tinh hoa văn hóa nhân loại</li>
+                      <li>Thực hiện tốt chính sách dân số, kế hoạch hóa gia đình, bảo vệ môi trường</li>
+                      <li>Đoàn kết, tương thân tương ái, giúp đỡ các gia đình khó khăn, góp phần xây dựng xã hội công bằng, nhân ái</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-primary-50 to-accent-50 rounded-lg p-4 border-l-4 border-primary-700 mt-4">
+                    <p className="text-sm text-gray-800 italic">
+                      <strong>Kết luận:</strong> Gia đình Việt Nam không chỉ là đối tượng được xây dựng trong thời kỳ quá độ lên 
+                      chủ nghĩa xã hội mà còn là chủ thể tích cực, đóng vai trò quan trọng trong việc xây dựng xã hội chủ nghĩa. 
+                      Xây dựng gia đình ấm no, bình đẳng, tiến bộ, hạnh phúc, văn minh vừa là mục tiêu, vừa là động lực, vừa là 
+                      điều kiện để xây dựng thành công xã hội chủ nghĩa ở Việt Nam.
+                    </p>
+                  </div>
+                </div>
+              </AccordionItem>
             </div>
           </motion.div>
         </div>
