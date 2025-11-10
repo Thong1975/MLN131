@@ -135,9 +135,9 @@ export default function Layout({ children }: LayoutProps) {
           </nav>
 
           {/* Dark Mode Toggle */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <DarkModeToggle />
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-3 md:hidden">
