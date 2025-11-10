@@ -45,9 +45,9 @@ export default function Layout({ children }: LayoutProps) {
   );
 
   const navigationItems = [
-    { path: '/baotang', icon: Museum, label: 'Bảo tàng', external: 'https://www.artsteps.com/view/68fe2d4a085f14571657eccc/?currentUser' },
     { path: '/', icon: Home, label: 'Giới thiệu' },
     { path: '/theory', icon: BookOpen, label: 'Lý thuyết' },
+     { path: '/baotang', icon: Museum, label: 'Bảo tàng', external: 'https://www.artsteps.com/view/68fe2d4a085f14571657eccc/?currentUser' },
     { path: '/changes', icon: TrendingUp, label: 'Biến đổi' },
     { path: '/direction', icon: Target, label: 'Phương hướng' },
     { path: '/games', icon: Gamepad2, label: 'Trò chơi' },
@@ -96,7 +96,7 @@ export default function Layout({ children }: LayoutProps) {
           </motion.div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center justify-center space-x-6 flex-1">
             {navigationItems.map((item) => {
               const Icon = item.icon;
               const isExternal = Boolean((item as any).external);
