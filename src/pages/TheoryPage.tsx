@@ -38,31 +38,11 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
   );
 };
 
-// Placeholder images
-const escapeForSVGText = (value: string) =>
-  value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
 
-const createPlaceholderSVG = (text: string, bgColor: string) => {
-  const safeText = escapeForSVGText(text);
-  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`
-    <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-      <rect width="800" height="400" fill="${bgColor}"/>
-      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" 
-            font-family="Arial, sans-serif" font-size="32" fill="white">
-        ${safeText}
-      </text>
-    </svg>
-  `)}`;
-};
 
-const familyNuclear = createPlaceholderSVG('👨‍👩‍👧 Gia đình hạt nhân', '#0c4a6e');
-const familyExtended = createPlaceholderSVG('👨‍👩‍👧‍👦‍👴‍👵 Gia đình mở rộng', '#0284c7');
-const familySingleParent = createPlaceholderSVG('👨‍👧 Gia đình đơn thân', '#7c3aed');
+const familyNuclear = '/images/gia.png';
+const familyExtended = '/images/van-hoa.jpg';
+const familySingleParent = '/images/don-than.jpg';
 
 export default function TheoryPage() {
   return (

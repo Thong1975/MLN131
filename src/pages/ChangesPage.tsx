@@ -39,9 +39,9 @@ const createPlaceholderSVG = (text: string, bgColor: string) => {
   `)}`;
 };
 
-const familyNuclear = createPlaceholderSVG('👨‍👩‍👧 Gia đình hạt nhân', '#0c4a6e');
-const familyExtended = createPlaceholderSVG('👨‍👩‍👧‍👦‍👴‍👵 Gia đình mở rộng', '#0284c7');
-const familySingleParent = createPlaceholderSVG('👨‍👧 Gia đình đơn thân', '#7c3aed');
+const familyNuclear = '/images/gia.png';
+const familyExtended = '/images/van-hoa.jpg';
+const familySingleParent = '/images/don-than.jpg';
 const infographicValues = createPlaceholderSVG('💎 Giá trị cốt lõi', '#0c4a6e');
 const comparisonChart = createPlaceholderSVG('📊 So sánh truyền thống - hiện đại', '#0284c7');
 const familyTradition = createPlaceholderSVG('🏛️ Gia đình truyền thống', '#0284c7');
@@ -222,7 +222,7 @@ export default function ChangesPage() {
               Từ gia đình truyền thống đến gia đình hiện đại trong bối cảnh công nghiệp hóa
             </p>
 
-            <figure className="mb-10">
+            {/* <figure className="mb-10">
               <img 
                 src={comparisonChart} 
                 alt="So sánh gia đình truyền thống và hiện đại" 
@@ -232,7 +232,7 @@ export default function ChangesPage() {
               <figcaption className="mt-4 text-center text-sm text-gray-600">
                 Biểu đồ so sánh: Gia đình truyền thống vs Gia đình hiện đại Việt Nam
               </figcaption>
-            </figure>
+            </figure> */}
 
             <div className="bg-gradient-to-r from-accent-50 to-primary-50 rounded-xl p-6 border-l-4 border-accent-600">
               <h3 className="font-semibold text-lg text-primary-900 mb-3">🔄 Những thay đổi chính:</h3>
@@ -490,7 +490,7 @@ export default function ChangesPage() {
       </section>
 
       {/* Gallery hình ảnh */}
-      <section className="py-16 px-4 bg-white dark:bg-gray-900">
+      {/* <section className="py-16 px-4 bg-white dark:bg-gray-900">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0 }}
@@ -513,7 +513,7 @@ export default function ChangesPage() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Xu hướng gia đình hiện đại - Gen Z & Millennials */}
       <section className="py-16 px-4 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">

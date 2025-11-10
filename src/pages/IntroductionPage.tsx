@@ -25,8 +25,8 @@ const createPlaceholderSVG = (text: string, bgColor: string) => {
 
 const familyHero = 'https://giadinh.mediacdn.vn/2020/6/26/gia-dinh-viet-copy-15931579856142054217757.jpg';
 const familyTradition = '/images/family.jpg';
-const policyLaw = createPlaceholderSVG('⚖️ Chính sách & Pháp luật', '#0c4a6e');
-const cultureFamily = createPlaceholderSVG('🎭 Văn hóa gia đình', '#0284c7');
+const policyLaw = '/images/image2.png';
+const cultureFamily = '/images/van-hoa.jpg';
 
 export default function IntroductionPage() {
   return (
