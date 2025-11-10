@@ -16,7 +16,7 @@ const modernTrends = [
   {
     icon: Users,
     title: 'Gia đình đa dạng',
-    description: 'Chấp nhận nhiều mô hình: đơn thân, LGBTQ+, đa văn hóa, sống thử trước hôn nhân',
+    description: 'Chấp nhận nhiều mô hình: đơn thân, đa văn hóa, sống thử trước hôn nhân',
     stat: '68%',
     label: 'Gen Z ủng hộ hôn nhân bình đẳng'
   },
@@ -93,9 +93,6 @@ export default function ModernFamilyTrends() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full text-sm font-semibold mb-4">
-            🔥 TRENDING 2024-2025
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-4">
             Gia đình thế hệ mới
           </h2>

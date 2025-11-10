@@ -1,12 +1,6 @@
 import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
 
 export default function SourcesPage() {
-  const pdfPath = encodeURI('/MLN131 - Slot 10.pdf');
-
-  const handleDownloadPDF = () => {
-    window.open(pdfPath, '_blank');
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-primary-50 to-accent-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-24">
@@ -19,7 +13,7 @@ export default function SourcesPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-primary-900 mb-6">
-              Nguồn tài liệu
+              Nguồn tài liệu & Tham khảo
             </h1>
             <p className="text-lg text-gray-600 mb-8">
               Tài liệu tham khảo và nguồn thông tin cho nghiên cứu về gia đình Việt Nam
@@ -28,7 +22,7 @@ export default function SourcesPage() {
         </div>
       </section>
 
-      {/* PDF Viewer */}
+      {/* PDF Viewer
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -65,7 +59,7 @@ export default function SourcesPage() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* Nguồn tài liệu tham khảo */}
@@ -85,17 +79,38 @@ export default function SourcesPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-4">📚 Tài liệu chính</h3>
                 <div className="space-y-3">
                   <div className="bg-gradient-to-r from-primary-50 to-transparent p-4 rounded-lg border-l-4 border-primary-600">
-                    <h4 className="font-semibold text-primary-800">Tài liệu giảng dạy MLN131 – Slot 10</h4>
+                    <h4 className="font-semibold text-primary-800">
+                      <a 
+                        href="https://www.canva.com/design/DAGNyVEAP5M/9ewLCix8B5KEusftCq9ysA/edit" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-amber-700 underline"
+                      >Tài liệu giảng dạy MLN131 – Slot 10</a>
+                    </h4>
                     <p className="text-sm text-gray-600 mt-1">Nguồn chính thức từ chương trình giảng dạy</p>
                   </div>
                   
                   <div className="bg-gradient-to-r from-accent-50 to-transparent p-4 rounded-lg border-l-4 border-accent-600">
-                    <h4 className="font-semibold text-primary-800">Luật Hôn nhân và Gia đình Việt Nam</h4>
+                    <h4 className="font-semibold text-primary-800">
+                       <a 
+                        href="https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Luat-Hon-nhan-va-gia-dinh-2014-238640.aspx" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-amber-700 underline"
+                      >Luật Hôn nhân và Gia đình Việt Nam</a>
+                      </h4>
                     <p className="text-sm text-gray-600 mt-1">Khung pháp lý về gia đình (2014, sửa đổi 2020)</p>
                   </div>
                   
                   <div className="bg-gradient-to-r from-primary-50 to-transparent p-4 rounded-lg border-l-4 border-primary-600">
-                    <h4 className="font-semibold text-primary-800">Chiến lược phát triển Gia đình Việt Nam đến 2030</h4>
+                    <h4 className="font-semibold text-primary-800">
+                       <a 
+                        href="https://thuvienphapluat.vn/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-amber-700 underline"
+                      >Chiến lược phát triển Gia đình Việt Nam đến 2030</a>
+                      </h4>
                     <p className="text-sm text-gray-600 mt-1">Định hướng chính sách gia đình trong thời kỳ mới</p>
                   </div>
                 </div>
@@ -105,19 +120,37 @@ export default function SourcesPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-4">📊 Nguồn dữ liệu</h3>
                 <div className="space-y-3">
                   <div className="bg-gradient-to-r from-blue-50 to-transparent p-4 rounded-lg border-l-4 border-blue-600">
-                    <h4 className="font-semibold text-primary-800">Tổng cục Thống kê Việt Nam</h4>
-                    <p className="text-sm text-gray-600 mt-1">Dữ liệu điều tra dân số và nhà ở</p>
+                    <h4 className="font-semibold text-primary-800">
+                      <a 
+                        href="https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/01/thong-cao-bao-chi-ket-qua-dieu-tra-dan-so-va-nha-o-giua-ky-nam-2024/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-700 underline"
+                      >
+                        Tổng cục Thống kê Việt Nam
+                      </a>
+                    </h4>
+                    <p className="text-sm text-gray-600 mt-1">Dữ liệu điều tra dân số và nhà ở giữa kỳ năm 2024</p>
                   </div>
                   
                   <div className="bg-gradient-to-r from-green-50 to-transparent p-4 rounded-lg border-l-4 border-green-600">
-                    <h4 className="font-semibold text-primary-800">Viện Xã hội học</h4>
+                    <h4 className="font-semibold text-primary-800">
+                      <a 
+                        href="https://ihfgs.vass.gov.vn/Pages/TrangChu.aspx" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-green-700 underline"
+                      >
+                        Viện Xã hội học
+                      </a>
+                    </h4>
                     <p className="text-sm text-gray-600 mt-1">Các nghiên cứu về gia đình Việt Nam</p>
                   </div>
                   
-                  <div className="bg-gradient-to-r from-purple-50 to-transparent p-4 rounded-lg border-l-4 border-purple-600">
+                  {/* <div className="bg-gradient-to-r from-purple-50 to-transparent p-4 rounded-lg border-l-4 border-purple-600">
                     <h4 className="font-semibold text-primary-800">Bộ Lao động - Thương binh và Xã hội</h4>
                     <p className="text-sm text-gray-600 mt-1">Báo cáo về tình hình gia đình Việt Nam</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -194,54 +227,10 @@ export default function SourcesPage() {
                 </ul>
               </motion.div>
             </div>
-
-            <div className="mt-10 text-center">
-              <div className="bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl p-6 border-l-4 border-primary-700">
-                <h3 className="font-semibold text-lg text-primary-900 mb-3">
-                  💡 Lưu ý về nguồn tài liệu
-                </h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Các dữ liệu thống kê trong trang web này mang tính chất minh họa, được sử dụng 
-                  để hỗ trợ việc hiểu và trình bày nội dung học thuật. Để có thông tin chính xác 
-                  và cập nhật nhất, vui lòng tham khảo các nguồn chính thức từ Tổng cục Thống kê 
-                  và các cơ quan có thẩm quyền.
-                </p>
-              </div>
-            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Footer thông tin */}
-      <footer className="bg-gradient-to-r from-primary-900 to-primary-700 text-white py-12 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-xl font-bold mb-4">Liên hệ và phản hồi</h3>
-              <p className="text-primary-100 mb-4">
-                Nếu bạn có góp ý hoặc câu hỏi về nội dung trang web, vui lòng liên hệ qua:
-              </p>
-              <div className="flex justify-center items-center space-x-6 text-primary-200">
-                <div className="flex items-center space-x-2">
-                  <span>📧</span>
-                  <span>mln131@example.edu.vn</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span>📞</span>
-                  <span>(+84) 123-456-789</span>
-                </div>
-              </div>
-              <p className="text-primary-200 text-sm mt-6">
-                © 2025 MLN131 Project.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

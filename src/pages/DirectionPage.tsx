@@ -5,37 +5,50 @@ const timelineData = [
   {
     year: '1945',
     title: 'Tuyên ngôn độc lập',
-    description: 'Khẳng định quyền bình đẳng nam nữ trong xã hội mới.'
+    description: 'Khẳng định quyền bình đẳng nam nữ trong xã hội mới. Đặt nền tảng cho nhân quyền con người trong Việt Nam độc lập.',
+    highlight: 'Tuyên ngôn độc lập của Hồ Chí Minh: "Tất cả mọi người sinh ra đều có quyền bình đẳng"'
   },
   {
     year: '1950',
     title: 'Luật Hôn nhân và Gia đình đầu tiên',
-    description: 'Cấm hôn nhân cưỡng bức, chế độ đa thê, bảo vệ quyền lợi phụ nữ và trẻ em.'
+    description: 'Cấm hôn nhân cưỡng bức, chế độ đa thê, bảo vệ quyền lợi phụ nữ và trẻ em. Đánh dấu bước ngoặt trong lịch sử pháp luật gia đình.',
+    highlight: 'Lần đầu tiên pháp luật xã hội chủ nghĩa quy định hôn nhân phải tự nguyện, một vợ một chồng'
   },
   {
     year: '1959',
     title: 'Luật Hôn nhân và Gia đình (sửa đổi)',
-    description: 'Hoàn thiện khung pháp lý về hôn nhân tự do, bình đẳng giữa vợ chồng.'
+    description: 'Hoàn thiện khung pháp lý về hôn nhân tự do, bình đẳng giữa vợ chồng. Cải thiện quyền lợi của phụ nữ và trẻ em.',
+    highlight: 'Khẳng định bình đẳng giữa nam và nữ trong mọi lĩnh vực của gia đình'
   },
   {
     year: '1986',
     title: 'Đổi mới kinh tế',
-    description: 'Chuyển sang cơ chế thị trường định hướng xã hội chủ nghĩa, tác động đến cơ cấu gia đình.'
+    description: 'Chuyển sang cơ chế thị trường định hướng xã hội chủ nghĩa, tác động sâu sắc đến cơ cấu, chức năng của gia đình Việt Nam.',
+    highlight: 'Sự chuyển biến từ gia đình đa thế hệ sang gia đình hạt nhân'
   },
   {
     year: '2000',
     title: 'Luật Hôn nhân và Gia đình 2000',
-    description: 'Bổ sung quy định về quan hệ tài sản vợ chồng, quyền nuôi con sau ly hôn.'
+    description: 'Bổ sung quy định về quan hệ tài sản vợ chồng, quyền nuôi con sau ly hôn. Bảo vệ quyền lợi trẻ em toàn diện.',
+    highlight: 'Coi trọng quyền tài sản của phụ nữ và bảo vệ trẻ em trong trường hợp ly hôn'
   },
   {
     year: '2014',
     title: 'Luật Hôn nhân và Gia đình 2014',
-    description: 'Nâng cao vai trò bảo vệ quyền lợi trẻ em, phòng chống bạo lực gia đình.'
+    description: 'Nâng cao vai trò bảo vệ quyền lợi trẻ em, phòng chống bạo lực gia đình. Quy định chi tiết hơn về nuôi con sau ly hôn.',
+    highlight: 'Lần đầu tiên quy định cụ thể về phòng chống bạo lực gia đình, bảo vệ phụ nữ và trẻ em'
+  },
+  {
+    year: '2015',
+    title: 'Nghị quyết 33-NQ/TW về Gia đình',
+    description: 'Đảng Cộng sản Việt Nam ban hành Nghị quyết toàn diện về gia đình, xác định gia đình là "tế bào cơ bản của xã hội".',
+    highlight: 'Xác định mục tiêu xây dựng gia đình Việt Nam ấm no, bình đẳng, tiến bộ, hạnh phúc'
   },
   {
     year: '2022',
     title: 'Chiến lược Gia đình đến 2030',
-    description: 'Định hướng xây dựng gia đình ấm no, tiến bộ, hạnh phúc, văn minh trong thời kỳ mới.'
+    description: 'Định hướng xây dựng gia đình ấm no, tiến bộ, hạnh phúc, văn minh trong thời kỳ mới và hội nhập quốc tế.',
+    highlight: 'Hướng tới Gia đình 4.0, kết hợp truyền thống và công nghệ'
   },
 ];
 

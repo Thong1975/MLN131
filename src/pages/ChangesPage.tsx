@@ -79,6 +79,9 @@ const birthRateData = [
   { year: '2010', tfr: 2.0 },
   { year: '2015', tfr: 2.1 },
   { year: '2020', tfr: 2.05 },
+  // Cập nhật theo Thông cáo DSGK 2024 (NSO)
+  { year: '2023', tfr: 1.96 },
+  { year: '2024', tfr: 1.91 },
 ];
 
 const womenEducationData = [
@@ -287,6 +290,65 @@ export default function ChangesPage() {
               Số liệu minh chứng cho sự biến đổi của gia đình Việt Nam
             </p>
 
+            {/* Key facts 2024 – Nguồn chính thức NSO */}
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 mb-10">
+              <h3 className="text-xl font-semibold text-primary-900 mb-4 text-center">
+                Kết quả Điều tra Dân số và Nhà ở giữa kỳ 2024 – Các chỉ số chính
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6 text-sm">
+                <div className="bg-primary-50 rounded-lg p-4 border border-primary-100">
+                  <div className="text-2xl font-bold text-primary-900">101.112.656</div>
+                  <div className="text-gray-700">Dân số Việt Nam (01/4/2024)</div>
+                  <div className="text-gray-500 mt-1">Nam 49,8% • Nữ 50,2%</div>
+                </div>
+                <div className="bg-primary-50 rounded-lg p-4 border border-primary-100">
+                  <div className="text-2xl font-bold text-primary-900">38,2% / 61,8%</div>
+                  <div className="text-gray-700">Tỷ trọng thành thị / nông thôn</div>
+                  <div className="text-gray-500 mt-1">Tăng dân số đô thị 3,06%/năm (2019–2024)</div>
+                </div>
+                <div className="bg-primary-50 rounded-lg p-4 border border-primary-100">
+                  <div className="text-2xl font-bold text-primary-900">28.146.939</div>
+                  <div className="text-gray-700">Số hộ dân cư</div>
+                  <div className="text-gray-500 mt-1">Ước tính quy mô hộ ≈ 3,59 người/hộ</div>
+                </div>
+                <div className="bg-accent-50 rounded-lg p-4 border border-accent-100">
+                  <div className="text-2xl font-bold text-primary-900">1,91</div>
+                  <div className="text-gray-700">TFR – con/phụ nữ (2024)</div>
+                  <div className="text-gray-500 mt-1">2023: 1,96 → 2024: 1,91</div>
+                </div>
+                <div className="bg-accent-50 rounded-lg p-4 border border-accent-100">
+                  <div className="text-2xl font-bold text-primary-900">74,7</div>
+                  <div className="text-gray-700">Tuổi thọ bình quân (năm 2024)</div>
+                  <div className="text-gray-500 mt-1">Nam 72,3 • Nữ 77,3</div>
+                </div>
+                <div className="bg-accent-50 rounded-lg p-4 border border-accent-100">
+                  <div className="text-2xl font-bold text-primary-900">60,2%</div>
+                  <div className="text-gray-700">Chỉ số già hóa (2024)</div>
+                  <div className="text-gray-500 mt-1">Người 60+ 14,2 triệu</div>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4 border border-amber-100">
+                  <div className="text-2xl font-bold text-primary-900">111,4</div>
+                  <div className="text-gray-700">Bé trai/100 bé gái khi sinh (SRB)</div>
+                  <div className="text-gray-500 mt-1">Mất cân bằng giới tính khi sinh còn cao</div>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4 border border-amber-100">
+                  <div className="text-2xl font-bold text-primary-900">13,5‰ / 5,6‰</div>
+                  <div className="text-gray-700">CBR / CDR (2024)</div>
+                  <div className="text-gray-500 mt-1">Trẻ sinh sống / Người chết trên 1000 dân</div>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4 border border-amber-100">
+                  <div className="text-2xl font-bold text-primary-900">305</div>
+                  <div className="text-gray-700">Mật độ dân số (người/km²)</div>
+                  <div className="text-gray-500 mt-1">Đồng bằng sông Hồng: 1.126; Đông Nam Bộ: 814</div>
+                </div>
+              </div>
+              <p className="text-xs text-gray-600 mt-4">
+                Nguồn: Cơ quan Thống kê Quốc gia – Thông cáo báo chí Kết quả Điều tra Dân số và Nhà ở giữa kỳ 2024 (06/01/2025). 
+                <a className="underline text-primary-800" href="https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/01/thong-cao-bao-chi-ket-qua-dieu-tra-dan-so-va-nha-o-giua-ky-nam-2024/" target="_blank" rel="noreferrer">Xem chi tiết</a>.
+                <br />Ghi chú: Quy mô hộ ≈ 3,59 người/hộ được suy ra từ dân số và số hộ trong thông cáo.
+              </p>
+            </div>
+
             {/* Biểu đồ 1: Cơ cấu quy mô hộ gia đình */}
             <div className="bg-white rounded-lg shadow-lg p-6 mb-10">
               <h3 className="text-xl font-semibold text-primary-900 mb-6 text-center">
@@ -382,7 +444,7 @@ export default function ChangesPage() {
             {/* Biểu đồ 4: Tỉ suất sinh (TFR) */}
             <div className="bg-white rounded-lg shadow-lg p-6 mb-10">
               <h3 className="text-xl font-semibold text-primary-900 mb-6 text-center">
-                Tỉ suất sinh toàn phần – TFR (1990 - 2020)
+                Tỉ suất sinh toàn phần – TFR (1990 - 2024)
               </h3>
               <div className="w-full h-80">
                 <ResponsiveContainer width="100%" height="100%">

@@ -109,6 +109,9 @@ const birthRateData = [
   { year: '2010', tfr: 2.0 },
   { year: '2015', tfr: 2.1 },
   { year: '2020', tfr: 2.05 },
+  // Cập nhật chính thức theo DSGK 2024 (NSO)
+  { year: '2023', tfr: 1.96 },
+  { year: '2024', tfr: 1.91 },
 ];
 
 // Dữ liệu bổ sung: Trình độ học vấn của phụ nữ – minh họa
@@ -806,7 +809,7 @@ export default function FamilySocialistPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-700 mr-2">✓</span>
-                  <span>Quy mô gia đình thu nhỏ: từ trung bình 5.1 người (1999) xuống 3.6 người (2019)</span>
+                  <span>Quy mô gia đình thu nhỏ: từ trung bình 5,1 người (1999) xuống 3,6 người (2019) và khoảng 3,59 người/hộ (2024 – DSGK)</span>
                 </li>
               </ul>
             </div>
@@ -1116,7 +1119,7 @@ export default function FamilySocialistPage() {
             {/* Biểu đồ 4: Tỉ suất sinh (TFR) */}
             <div className="bg-white rounded-lg shadow-lg p-6 mt-10">
               <h3 className="text-xl font-semibold text-primary-900 mb-6 text-center">
-                Tỉ suất sinh toàn phần – TFR (1990 - 2020)
+                Tỉ suất sinh toàn phần – TFR (1990 - 2024)
               </h3>
               <div className="w-full h-80">
                 <ResponsiveContainer width="100%" height="100%">
@@ -1210,7 +1213,7 @@ export default function FamilySocialistPage() {
       </section>
 
       {/* PDF Viewer */}
-      <section id="pdf" className="py-16 px-4 bg-white">
+      {/* <section id="pdf" className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0 }}
@@ -1228,7 +1231,7 @@ export default function FamilySocialistPage() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Trò chơi học tập */}
       <section id="games" className="py-16 px-4 bg-gradient-to-br from-primary-900 via-primary-800 to-accent-700 relative overflow-hidden">

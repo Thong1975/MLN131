@@ -22,6 +22,28 @@ export default function Layout({ children }: LayoutProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
+  // Local Museum SVG icon component (used for the 'Bảo tàng' nav item)
+  const Museum = ({ size = 18 }: { size?: number }) => (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M3 10l9-6 9 6" />
+      <path d="M21 10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7" />
+      <path d="M8 10v6" />
+      <path d="M12 10v6" />
+      <path d="M16 10v6" />
+    </svg>
+  );
+
   const navigationItems = [
     { path: '/', icon: Home, label: 'Giới thiệu' },
     { path: '/theory', icon: BookOpen, label: 'Lý thuyết' },
@@ -29,6 +51,8 @@ export default function Layout({ children }: LayoutProps) {
     { path: '/direction', icon: Target, label: 'Phương hướng' },
     { path: '/games', icon: Gamepad2, label: 'Trò chơi' },
     { path: '/sources', icon: FileText, label: 'Nguồn' },
+  // External museum link (opens Artsteps)
+  { path: '/baotang', icon: Museum, label: 'Bảo tàng', external: 'https://www.artsteps.com/view/68fe2d4a085f14571657eccc/?currentUser' },
   ];
 
   const isActivePath = (path: string) => {
@@ -57,6 +81,16 @@ export default function Layout({ children }: LayoutProps) {
               <div>
                 <h1 className="text-xl font-bold text-primary-900 dark:text-white">MLN131</h1>
                 <p className="text-xs text-gray-600 dark:text-gray-300">Gia đình & CNXH</p>
+                {/* Museum link (opens Artsteps in a new tab) */}
+                <a
+                  href="https://www.artsteps.com/view/68fe2d4a085f14571657eccc/?currentUser"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Mở bảo tàng ảo trên Artsteps (mở trong tab mới)"
+                  className="text-sm text-primary-700 dark:text-primary-400 hover:underline mt-0.5 inline-block"
+                >
+                  Bảo tàng (Artsteps)
+                </a>
               </div>
             </Link>
           </motion.div>
@@ -65,8 +99,24 @@ export default function Layout({ children }: LayoutProps) {
           <nav className="hidden md:flex items-center space-x-6">
             {navigationItems.map((item) => {
               const Icon = item.icon;
-              const isActive = isActivePath(item.path);
-              
+              const isExternal = Boolean((item as any).external);
+              const isActive = !isExternal && isActivePath(item.path);
+
+              if (isExternal) {
+                return (
+                  <a
+                    key={item.path}
+                    href={(item as any).external}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center space-x-1 transition-colors text-gray-700 dark:text-gray-300 hover:text-primary-700 dark:hover:text-primary-400`}
+                  >
+                    <Icon size={18} />
+                    <span>{item.label}</span>
+                  </a>
+                );
+              }
+
               return (
                 <Link
                   key={item.path}
@@ -111,8 +161,25 @@ export default function Layout({ children }: LayoutProps) {
             <nav className="container mx-auto px-4 flex flex-col space-y-3">
               {navigationItems.map((item) => {
                 const Icon = item.icon;
-                const isActive = isActivePath(item.path);
-                
+                const isExternal = Boolean((item as any).external);
+                const isActive = !isExternal && isActivePath(item.path);
+
+                if (isExternal) {
+                  return (
+                    <a
+                      key={item.path}
+                      href={(item as any).external}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`flex items-center space-x-2 py-2 transition-colors text-gray-700 dark:text-gray-300 hover:text-primary-700 dark:hover:text-primary-400`}
+                    >
+                      <Icon size={18} />
+                      <span>{item.label}</span>
+                    </a>
+                  );
+                }
+
                 return (
                   <Link
                     key={item.path}

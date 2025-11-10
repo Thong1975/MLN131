@@ -52,7 +52,6 @@ export default function IntroductionPage() {
             <figure className="mt-10">
               <img
                 src={familyHero}
-                
                 alt="Minh họa gia đình Việt Nam trong thời kỳ quá độ"
                 className="mx-auto w-full max-w-4xl rounded-xl shadow-md"
                 loading="lazy"
@@ -96,6 +95,46 @@ export default function IntroductionPage() {
                 của gia đình đều có những chuyển biến rõ rệt.
               </p>
 
+              <h3 className="text-2xl font-bold text-primary-900 mt-8 mb-4">
+                1.1. Tầm quan trọng của Gia đình
+              </h3>
+              
+              <p className="mb-6">
+                <strong>Gia đình là tế bào cơ bản của xã hội.</strong> Theo quan điểm chủ nghĩa Mác-Lênin, 
+                gia đình không chỉ là một thể chế tự nhiên mà là một thiết chế xã hội có ý nghĩa quan trọng. 
+                Friedrich Engels trong tác phẩm <em>"Căn nguyên gia đình, sở hữu tư nhân và nhà nước"</em> 
+                đã chỉ ra rằng <strong>gia đình là nền tảng của cấu trúc xã hội</strong>, phát triển và biến đổi 
+                theo từng giai đoạn lịch sử.
+              </p>
+
+              <p className="mb-6">
+                Trong công cuộc xây dựng chủ nghĩa xã hội ở Việt Nam, Chủ tịch Hồ Chí Minh đã nhấn mạnh: 
+                <em>"Gia đình là nền tảng của xã hội, gia đình hạnh phúc là nền tảng của xã hội chủ nghĩa."</em>
+                Nhận thức này phản ánh vai trò <strong>không thể thiếu của gia đình</strong> trong việc:
+              </p>
+
+              <ul className="list-disc pl-6 mb-6 space-y-3">
+                <li><strong>Tái sản xuất nhân lực:</strong> Tạo ra và chăm sóc thế hệ tương lai, là nguồn nhân lực lao động của xã hội.</li>
+                <li><strong>Giáo dục đạo đức:</strong> Truyền đạt giá trị, ý thức, kỹ năng sống cho con em từ khi sinh ra.</li>
+                <li><strong>Ổn định xã hội:</strong> Cung cấp hỗ trợ tình cảm, an sinh và bảo vệ sức khỏe cho các thành viên.</li>
+                <li><strong>Động lực kinh tế:</strong> Tham gia vào hoạt động kinh tế gia đình và xã hội, góp phần phát triển kinh tế chung.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold text-primary-900 mt-8 mb-4">
+                1.2. Mục tiêu của Website
+              </h3>
+
+              <p className="mb-6">
+                Website này được xây dựng nhằm mục đích:
+              </p>
+
+              <div className="bg-primary-50 border-l-4 border-primary-700 p-6 rounded-r-lg mb-6">
+                <p className="mb-3"><strong>✓ Phổ biến tri thức lý luận:</strong> Giúp người học hiểu rõ nền tảng lý thuyết Mác-Lênin về gia đình trong xã hội chủ nghĩa.</p>
+                <p className="mb-3"><strong>✓ Phân tích thực tiễn Việt Nam:</strong> Thể hiện đặc thù gia đình Việt Nam, những thách thức và cơ hội trong giai đoạn quá độ.</p>
+                <p className="mb-3"><strong>✓ Đề xuất giải pháp:</strong> Nêu bật những đường hướng xây dựng "Gia đình xã hội chủ nghĩa kiểu mới" với tinh thần "Bình đẳng – Trách nhiệm – Yêu thương".</p>
+                <p><strong>✓ Kích thích tư duy phản biện:</strong> Khuyến khích người học suy ngẫm và hành động có ý thức trong việc xây dựng gia đình hạnh phúc.</p>
+              </div>
+
               {/* Trích dẫn Hồ Chí Minh */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -121,7 +160,7 @@ export default function IntroductionPage() {
                 sự phát triển toàn diện của đất nước.
               </p>
 
-              <div className="bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl p-6 border-l-4 border-primary-700 mt-8">
+              {/* <div className="bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl p-6 border-l-4 border-primary-700 mt-8">
                 <h3 className="font-semibold text-lg text-primary-900 mb-3">🎯 Mục tiêu của trang web này:</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -141,7 +180,7 @@ export default function IntroductionPage() {
                     <span>Đưa ra định hướng phát triển gia đình trong tương lai</span>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
 
             {/* Bộ sưu tập minh họa */}

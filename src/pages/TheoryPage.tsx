@@ -409,7 +409,7 @@ export default function TheoryPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-700 mr-2">✓</span>
-                  <span>Quy mô gia đình thu nhỏ: từ trung bình 5.1 người (1999) xuống 3.6 người (2019)</span>
+                  <span>Quy mô gia đình thu nhỏ: từ trung bình 5,1 người (1999) xuống 3,6 người (2019) và khoảng 3,59 người/hộ (2024 – DSGK)</span>
                 </li>
               </ul>
             </div>
@@ -432,7 +432,7 @@ export default function TheoryPage() {
               Những giá trị truyền thống được kế thừa và phát huy trong thời kỳ mới
             </p>
 
-            <figure className="mb-10">
+            {/* <figure className="mb-10">
               <img 
                 src={infographicValues} 
                 alt="Giá trị cốt lõi của gia đình Việt Nam" 
@@ -442,7 +442,7 @@ export default function TheoryPage() {
               <figcaption className="mt-4 text-center text-sm text-gray-600">
                 Infographic: 7 giá trị cốt lõi của gia đình Việt Nam trong thời kỳ quá độ lên CNXH
               </figcaption>
-            </figure>
+            </figure> */}
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-lg p-6 shadow-md border border-primary-200">
