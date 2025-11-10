@@ -45,6 +45,7 @@ export default function Layout({ children }: LayoutProps) {
   );
 
   const navigationItems = [
+    { path: '/baotang', icon: Museum, label: 'Bảo tàng', external: 'https://www.artsteps.com/view/68fe2d4a085f14571657eccc/?currentUser' },
     { path: '/', icon: Home, label: 'Giới thiệu' },
     { path: '/theory', icon: BookOpen, label: 'Lý thuyết' },
     { path: '/changes', icon: TrendingUp, label: 'Biến đổi' },
@@ -52,7 +53,6 @@ export default function Layout({ children }: LayoutProps) {
     { path: '/games', icon: Gamepad2, label: 'Trò chơi' },
     { path: '/sources', icon: FileText, label: 'Nguồn' },
   // External museum link (opens Artsteps)
-  { path: '/baotang', icon: Museum, label: 'Bảo tàng', external: 'https://www.artsteps.com/view/68fe2d4a085f14571657eccc/?currentUser' },
   ];
 
   const isActivePath = (path: string) => {
