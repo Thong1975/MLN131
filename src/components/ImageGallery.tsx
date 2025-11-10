@@ -1,6 +1,4 @@
-/**
- * Image Gallery with Navigator - Gallery hình ảnh với điều hướng
- */
+
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';

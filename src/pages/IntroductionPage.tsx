@@ -2,27 +2,6 @@ import { motion } from 'framer-motion';
 import { Quote } from 'lucide-react';
 
 // Placeholder images
-const escapeForSVGText = (value: string) =>
-  value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-
-const createPlaceholderSVG = (text: string, bgColor: string) => {
-  const safeText = escapeForSVGText(text);
-  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`
-    <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-      <rect width="800" height="400" fill="${bgColor}"/>
-      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" 
-            font-family="Arial, sans-serif" font-size="32" fill="white">
-        ${safeText}
-      </text>
-    </svg>
-  `)}`;
-};
-
 const familyHero = 'https://giadinh.mediacdn.vn/2020/6/26/gia-dinh-viet-copy-15931579856142054217757.jpg';
 const familyTradition = '/images/family.jpg';
 const policyLaw = '/images/image2.png';

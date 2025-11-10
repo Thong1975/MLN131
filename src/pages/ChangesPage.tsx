@@ -14,39 +14,7 @@ import {
   Pie,
   Cell
 } from 'recharts';
-import ImageGallery from '../components/ImageGallery';
 import ModernFamilyTrends from '../components/ModernFamilyTrends';
-
-// Placeholder images
-const escapeForSVGText = (value: string) =>
-  value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-
-const createPlaceholderSVG = (text: string, bgColor: string) => {
-  const safeText = escapeForSVGText(text);
-  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`
-    <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-      <rect width="800" height="400" fill="${bgColor}"/>
-      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" 
-            font-family="Arial, sans-serif" font-size="32" fill="white">
-        ${safeText}
-      </text>
-    </svg>
-  `)}`;
-};
-
-const familyNuclear = '/images/gia.png';
-const familyExtended = '/images/van-hoa.jpg';
-const familySingleParent = '/images/don-than.jpg';
-const infographicValues = createPlaceholderSVG('💎 Giá trị cốt lõi', '#0c4a6e');
-const comparisonChart = createPlaceholderSVG('📊 So sánh truyền thống - hiện đại', '#0284c7');
-const familyTradition = createPlaceholderSVG('🏛️ Gia đình truyền thống', '#0284c7');
-const policyLaw = createPlaceholderSVG('⚖️ Chính sách & Pháp luật', '#0c4a6e');
-const cultureFamily = createPlaceholderSVG('🎭 Văn hóa gia đình', '#0284c7');
 
 // Dữ liệu biểu đồ
 const familySizeData = [
@@ -91,66 +59,6 @@ const womenEducationData = [
   { name: 'TC/CĐ/ĐH+', value: 22 },
 ];
 const eduColors = ['#7dd3fc', '#0284c7', '#0c4a6e', '#fde047'];
-
-// Dữ liệu gallery hình ảnh
-const galleryImages = [
-  {
-    id: 1,
-    src: familyNuclear,
-    title: 'Gia đình hạt nhân hiện đại',
-    description: 'Mô hình phổ biến nhất với 3-4 thành viên, chiếm 52% hộ gia đình',
-    category: 'Mô hình gia đình'
-  },
-  {
-    id: 2,
-    src: familyExtended,
-    title: 'Gia đình đa thế hệ',
-    description: 'Ông bà, bố mẹ, con cháu sống chung, giữ gìn giá trị truyền thống',
-    category: 'Mô hình gia đình'
-  },
-  {
-    id: 3,
-    src: familySingleParent,
-    title: 'Gia đình đơn thân',
-    description: 'Xu hướng gia tăng, cần chính sách hỗ trợ đặc biệt',
-    category: 'Mô hình gia đình'
-  },
-  {
-    id: 4,
-    src: infographicValues,
-    title: '7 Giá trị cốt lõi',
-    description: 'Kết hợp giá trị truyền thống và hiện đại của gia đình Việt Nam',
-    category: 'Giá trị gia đình'
-  },
-  {
-    id: 5,
-    src: comparisonChart,
-    title: 'So sánh truyền thống - hiện đại',
-    description: 'Sự biến đổi từ gia đình truyền thống sang gia đình hiện đại',
-    category: 'Biến đổi'
-  },
-  {
-    id: 6,
-    src: familyTradition,
-    title: 'Gia đình truyền thống',
-    description: 'Giá trị hiếu thảo, tương thân tương ái trong gia đình Việt Nam',
-    category: 'Truyền thống'
-  },
-  {
-    id: 7,
-    src: policyLaw,
-    title: 'Luật Hôn nhân và Gia đình',
-    description: 'Khung pháp lý bảo vệ quyền lợi các thành viên gia đình',
-    category: 'Chính sách'
-  },
-  {
-    id: 8,
-    src: cultureFamily,
-    title: 'Văn hóa gia đình',
-    description: 'Giữ gìn và phát huy giá trị văn hóa trong thời kỳ hội nhập',
-    category: 'Văn hóa'
-  }
-];
 
 // Thách thức hiện nay
 const challenges = [
