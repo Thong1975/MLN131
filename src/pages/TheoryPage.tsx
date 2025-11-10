@@ -63,7 +63,6 @@ const createPlaceholderSVG = (text: string, bgColor: string) => {
 const familyNuclear = createPlaceholderSVG('👨‍👩‍👧 Gia đình hạt nhân', '#0c4a6e');
 const familyExtended = createPlaceholderSVG('👨‍👩‍👧‍👦‍👴‍👵 Gia đình mở rộng', '#0284c7');
 const familySingleParent = createPlaceholderSVG('👨‍👧 Gia đình đơn thân', '#7c3aed');
-const infographicValues = createPlaceholderSVG('💎 Giá trị cốt lõi', '#0c4a6e');
 
 export default function TheoryPage() {
   return (
